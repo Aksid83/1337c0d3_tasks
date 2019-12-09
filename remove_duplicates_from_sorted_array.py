@@ -26,3 +26,15 @@ for (int i = 0; i < len; i++) {
 }
 """
 
+# In order to remove duplicates in python we can cast set on the given list and cast list again.
+# But this task is need to be done without set help. 
+# Basically we need to return counter of unique elements to slice an array after keeping unique elements in the fist part of the array.
+
+def removeDuplicates(self, nums: list([int])) -> int:
+    i = 0
+    for j in range(1, len(nums)):
+        if nums[j] != nums[i]:
+            i += 1
+            nums[i] = nums[j]
+    return i + 1
+

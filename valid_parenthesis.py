@@ -30,8 +30,6 @@ Output: true
 def isValidPar(s: str) -> bool:
     # Mapping closing brackets to their opening brackets
     par_map = { ')': '(', ']': '[', '}': '{' }
-    print(par_map.keys())
-    print(par_map.values())
     # Instanciating stack to track brackets
     stack = []
     for char in s:
