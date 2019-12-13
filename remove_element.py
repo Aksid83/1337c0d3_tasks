@@ -46,9 +46,3 @@ def removeElement_2(nums: list([int]), val: int) -> int:
         else:
             i += 1
     return n
-
-    for j in range(len(nums)):
-        if nums[j] != val:
-            nums[i] = nums[j]
-            i += 1
-    return i
